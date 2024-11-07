@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> | My Blog</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
+    <script src="https://kit.fontawesome.com/21412dc414.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div id="blog-header">
+    <video autoplay loop muted playsinline class="background-clip">
+        <source src="images/blog-vid.mp4" type="video/mp4">
+    </video>
+    <div class="container">
+        <nav>
+            <img src="images/logo.png" class="logo">
+            <ul id="sidemenu">
+                <li><a href="main.html#header">Home</a></li>
+                <li><a href="main.html#about">About me</a></li>
+                <li><a href="main.html#services">Services</a></li>
+                <li><a href="#portfolio">Blog</a></li>
+                <li><a href="main.html#contact">Contact</a></li>
+                <i class="fas fa-solid fa-xmark" onclick="closemenu()"></i>
+            </ul>
+            <i class="fas fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="blog-header-text">
+            <p>Blog tagged by <span>Lanz Colico</span></p>
+            <h1> <span>|</span> My Blogs</h1>
+        </div>
+    </div>
+</div>
+<!---------Blog Sections----------->
+<div id="blog">
+    <div class="container 1">
+        <div class="row-blog">
+            <div class="blog-col-1">
+                <img src="images/3.png">
+            </div>
+            <div class="blog-col-2">
+                <h1 class="sub-title">blog 1: my piece</h1>
+                <p>&nbsp;	&nbsp;	&nbsp;	&nbsp;Back in 2016, I stumbled upon a new passion: photography. What started as casual snapshots quickly turned into a creative journey as I began experimenting with different styles and concepts. I decided to curate my Instagram with a dark academia theme, inspired by the moody, intellectual vibes of antique libraries, vintage books, and classic architecture. This aesthetic became a perfect canvas for my newfound love for capturing the world through my lens.<br><br>&nbsp;	&nbsp;	&nbsp;	&nbsp;As I honed my skills, I experimented with various photography techniques—bird's eye views, sweeping landscapes, and intimate portraits. Each shot was a step in discovering my unique perspective and artistic voice. My Instagram became a visual diary of this journey, a collection of moments frozen in time that reflected not only my growth as a photographer but also my evolving identity. Every like and comment fueled my passion and pushed me to explore even more creative boundaries.<br><br>&nbsp;	&nbsp;	&nbsp;	&nbsp;However, life took me down different paths, and my focus shifted away from Instagram and photography. New interests and responsibilities emerged, leading me to pause this creative outlet. But, in the back of my mind, there's always been a desire to return to it. I know that one day, when the time is right, I'll pick up my camera again and start capturing my unique pieces of the world. Until then, my past works remain a testament to my passion, and I eagerly await the moment when the spark for photography reignites within me.<br><br></p>
+            </div>
+        </div>
+    <div class="row-blog">
+        <div class="blog-col-1">
+            <img src="images/2.png">
+        </div>
+        <div class="blog-col-2">
+            <h1 class="sub-title">blog 2: doing photoshoot</h1>
+            <p>&nbsp;	&nbsp;	&nbsp;	&nbsp;When I was 16, I discovered a new form of self-expression—photoshoots at home. My friend from Lagro High School was a big influence, encouraging me to experiment with different styles, fashion choices, and photography techniques. Our home turned into a mini-studio where we could unleash our creativity and try out new looks. It was through these sessions that I began to explore my personal style and learned a lot about what worked for me in terms of fashion and styling.<br><br>	&nbsp;	&nbsp;	&nbsp;	&nbsp; Our experiments led us to create an Instagram account to showcase our work. The account quickly gained traction among our friends, who loved the content and even started their own similar projects. It was incredibly motivating to see others get inspired by our creativity. This journey didn't just stop at photoshoots; it extended to helping each other with styling tips and fashion advice. The camaraderie and support from my friends made the entire experience even more special.<br><br> 	&nbsp;	&nbsp;	&nbsp;	&nbsp;This period of experimentation and creativity had a lasting impact on me. It significantly boosted my confidence in styling my clothes and expressing myself through fashion, a confidence that has stayed with me until now. I'm truly thankful for my friend's influence and the fun times we had exploring fashion and styling together. Those photoshoots were more than just a hobby—they were a pivotal part of my personal growth and self-discovery.<br><br></p>
+        </div>
+    </div>
+    <div class="row-blog">
+        <div class="blog-col-1">
+            <img src="images/4.png">
+        </div>
+        <div class="blog-col-2">
+            <h1 class="sub-title">blog 3: things that are special to me</h1>
+            <p>&nbsp;	&nbsp;	&nbsp;	&nbsp;During the pandemic era of 2020-2021, while the world was grappling with stress and existential crises, I found solace in the little things that brought light into my life. One of the most cherished gifts I received was a piece of artwork from my best friend. It was a portrait of me, which he meticulously created to show his appreciation for the comfort and presence I provided during those tough times. This gesture, made on my birthday, was particularly touching because it symbolized the deep connection we maintained even when everything else seemed to be falling apart.<br><br>&nbsp;	&nbsp;	&nbsp;	&nbsp;Another special gift was the book "Emma," given to me by my twin soul and best friend. During the lockdown, as I struggled with the monotony of routine, she introduced me to the world of novels. Her thoughtful gift opened a new avenue for me to escape and find peace. Reading became a refuge, and it was through her support that I discovered a new hobby that brought me immense joy and tranquility.<br><br> &nbsp;	&nbsp;	&nbsp;	&nbsp;These tokens of appreciation from my friends are not just objects; they are reminders of the incredible bonds we share. Even now, as life moves forward, I remain grateful for their unwavering support and the special place they hold in my heart. This blog is a tribute to the enduring friendship and the cherished moments that continue to enrich my life.<br><br></p>
+        </div>
+    </div>
+</div>
+<!-----------Comment Section------------>
+<div class="comment-section">
+    <h2>Leave a Comment</h2>
+    <form>
+        <div class="left-column">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name">
+
+            <label for="gender">Gender:</label>
+            <select id="gender" name="gender">
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="other">Other</option>
+            </select>
+
+            <label for="birthdate">Birthdate:</label>
+            <input type="date" id="birthdate" name="birthdate">
+
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" name="email">
+        </div>
+        <div class="right-column">
+            <label for="comments">Comments about my blog:</label>
+            <textarea id="comments" name="comments" rows="6"></textarea>
+        </div>
+        <div class="submit-button">
+            <button type="submit">Submit</button>
+        </div>
+    </form>
+</div>
+
+
+<!----------------------->
+</div>
+<div class="copyright">
+    <p>Copyright © LA Colico. Made with <i class="fa-solid fa-heart"></i> by Lanz Colico </p>
+</div>
+</div>
+
+
+<script>
+
+var tablinks = document.getElementsByClassName("tab-links");
+var tabcontents = document.getElementsByClassName("tab-contents");
+
+function opentab(tabname){
+
+    for(tablink of tablinks){
+        tablink.classList.remove("active-link");
+    }
+    for(tabcontent of tabcontents){
+        tabcontent.classList.remove("active-tab");
+    }
+    event.currentTarget.classList.add("active-link");
+    document.getElementById(tabname).classList.add("active-tab");
+}
+
+</script>
+
+<script>
+
+var sidemenu = document.getElementById("sidemenu");
+
+function openmenu(){
+    sidemenu.style.right = "0";
+}
+function closemenu(){
+    sidemenu.style.right = "-200px";
+}
+
+</script>
+
+</body>
+</html>

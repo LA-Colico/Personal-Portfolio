@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>| Home</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
+    <script src="https://kit.fontawesome.com/21412dc414.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <video autoplay loop muted playsinline class="background-clip">
+            <source src="images/bgvid.mp4" type="video/mp4">
+        </video>
+        <nav>
+            <img src="images/logo.png" class="logo">
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About me</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fas fa-solid fa-xmark" onclick="closemenu()"></i>
+            </ul>
+            <i class="fas fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <p>Computer Science Major</p>
+            <h1> Hi, I'm <span>LA Colico</span><br>from Quezon City</h1>
+        </div>
+        <div class="btn" data-aos="zoom-in" data-aos-duration="1500" data-aos-delay="1800">
+            <a href="https://www.instagram.com/laclc_/"><button>Follow me!</button></a>
+        </div>
+    </div>
+</div>
+<!-----------ABOUT ME---------->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/moe.jpg">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>Hey there! I’m Lanz Colico, a 21-year-old (Aquarius, obviously) born on January 24, 2003. My MBTI is INFJ, which basically means I’m a rare digital nomad of introspection and insight. My mantra? "No one is greater than me, and I am no greater than anyone else."
+
+                    <br><br>I’m currently 3rd year majoring Computer Science at the Technological University of the Philippines (TUP), with dreams of becoming a web developer or software engineer at one of the big companies here someday. I have a soft spot for cats and while yellow is my go-to color, people seem to think blue suits me better.<br><br></p>
+
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('hobby')">Hobby</p>
+                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>Proficient in MS Office</span><br>Microsoft Words, Office, Excel</li>
+                        <li><span>Experienced in video editing software</span><br>(e.g., Adobe Premiere, Capcut)</li>
+                        <li><span>Installing, updating, and configuring operating systems</span><br>(e.g., Windows, macOS)</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="hobby">
+                    <ul>
+                        <li><span>Reading Novel and Manga/Manhwa</span><br>Emma by Jane Austin, The Alchemist by Paulo Coelho</li>
+                        <li><span>Listening to Music</span><br>(Hyperpop, R&B, Pop, Kawaii Future Bass)</li>
+                        <li><span>Creating Digital Arts</span><br>(Vector, Portrait, Futuristic)</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>Part-time Printing Assistant</span><br>Paid | 2019</li>
+                        <li><span>Tutorial Program - Interact Club</span><br>Voluntary | 2019</li>
+                        <li><span>Installing, updating, and configuring operating systems</span><br>(e.g., Windows, macOS)</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--------services------>
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>Web Design</h2>
+                <p> Skilled in creating visually stunning and functional websites with HTML, CSS, and JavaScript.</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-crop"></i>
+                <h2>UI/UX Design</h2>
+                <p> Experienced in crafting user-centered interfaces and experiences with tools like Figma and Adobe XD.</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-brands fa-app-store"></i>
+                <h2>App Design</h2>
+                <p>Proficient in developing intuitive and engaging mobile applications with Flutter and React Native.</p>
+                <a href="#">Learn more</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!------------Portfolio------------->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Blog</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/3.png">
+                <div class="layer">
+                    <h3>blog 1: my piece</h3>
+                    <p>Started my photography journey in 2016, transformed my Instagram with dark academia vibes, experimented with different shots, and now, after exploring other interests, I'm looking to reignite that creative spark.</p>
+                    <a href="blog.html"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/2.png">
+                <div class="layer">
+                    <h3>blog 2: doing photoshoot</h3>
+                    <p> Discovering self-expression through home photoshoots and fashion experiments, thanks to the inspiring push from my high school friend.</p>
+                    <a href="blog.html"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/4.png">
+                <div class="layer">
+                    <h3>blog 3: things that are special to me</h3>
+                    <p>Treasuring heartfelt gifts from friends that brought comfort and joy during the pandemic.</p>
+                    <a href="blog.html"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="blog.html" class="btn2">See more</a>
+    </div>
+</div>
+<!--------------Contact--------------->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-paper-plane"></i> thelacolics@gmail.com</p>
+                <p><i class="fa-solid fa-square-phone"></i> +63-909-833-6236</p>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/lanz.colico/"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://www.instagram.com/0x.zip/"><i class="fa-brands fa-instagram"></i></a>
+                </div>
+                <a href="images/cv-colico.pdf" download class="btn2 btn3">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form>
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn2 btn3">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright © LA Colico. Made with <i class="fa-solid fa-heart"></i> by Lanz Colico </p>
+    </div>
+</div>
+
+
+<script>
+
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+    
+    function opentab(tabname){
+
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+
+</script>
+
+<script>
+
+    var sidemenu = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemenu.style.right = "0";
+    }
+    function closemenu(){
+        sidemenu.style.right = "-200px";
+    }
+
+</script>
+
+</body>
+</html>

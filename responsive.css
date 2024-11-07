@@ -1,0 +1,99 @@
+/*-------------Responsive CSS for Mobile and Tablet -----------------------*/
+@media only screen and (max-width:600px){
+    #blog-header{
+        background-image: url(images/phone.png);
+    }
+    #header {
+        background-image: url(images/try1.png);
+    }
+    .blog-header-text{
+        margin-top: 100%;
+        font-size: 16px;
+    }
+    .header-text{
+        margin-top: 110%;
+        font-size: 16px;
+    }
+    .header-text h1{
+        font-size: 30px;
+    }
+    .header-text h1 span{
+        color: #3b537c;
+    }
+    .btn button{
+        width: 50%;
+        left: 0;
+        position: relative;
+    }
+    nav .fas{
+        display: block;
+        font-size: 25px;
+        color: #fff;
+    }
+    nav ul{
+        background-color: #3b537c;
+        position: fixed;
+        top: 0;
+        right: -200px;
+        width: 200px;
+        height: 100vh;
+        padding-top: 50px;
+        z-index: 2;
+        transition: right 0.5s;
+    }
+    nav ul li{
+        display: block;
+        margin: 25px;
+    }
+    nav ul .fas{
+        position: absolute;
+        top: 25px;
+        left: 25px;
+        cursor: pointer;
+    }
+    .sub-title{
+        font-size: 40px;
+    }
+    .about-col-1, .about-col-2{
+        flex-basis: 100%;
+    }
+    .about-col-1{
+        margin-bottom: 30px;
+    }
+    .about-col-1{
+        font-size: 14px;
+    }
+    .tab-links{
+        font-size: 16px;
+        margin-right: 20px;
+    }
+    .contact-left, .contact-right{
+        flex-basis: 100%;
+    }
+    .copyright{
+        font-size: 14px;
+    }
+    /*------------------Blog HTML-----------------------*/
+    .blog-col-1, .blog-col-2{
+        flex-basis: 100%;
+    }
+    .blog-col-1{
+        margin-bottom: 30px;
+    }
+    .blog-col-1{
+        font-size: 14px;
+    }
+/*------------------Comment Section-----------------*/
+.comment-section form {
+    flex-direction: column;
+}
+
+.comment-section .left-column, 
+.comment-section .right-column {
+    margin: 0;
+}
+
+.comment-section .submit-button {
+    margin-top: 20px;
+}
+}
