@@ -21,6 +21,7 @@
                 <li><a href="#header">Home</a></li>
                 <li><a href="#about">About me</a></li>
                 <li><a href="#services">Services</a></li>
+                <li><a href="projects.html">Projects</a></li>
                 <li><a href="blog.html">Blog</a></li>
                 <li><a href="#contact">Contact</a></li>
                 <i class="fas fa-solid fa-xmark" onclick="closemenu()"></i>
@@ -109,6 +110,7 @@
 <div id="portfolio">
     <div class="container">
         <h1 class="sub-title">My Blog</h1>
+        <p class="section-description">Personal stories and creative journeys</p>
         <div class="work-list">
             <div class="work">
                 <img src="images/3.png">
@@ -197,6 +199,26 @@
     function closemenu(){
         sidemenu.style.right = "-200px";
     }
+
+    // Intersection Observer for scroll animations
+    const observerOptions = {
+        threshold: 0.1,
+        rootMargin: '0px 0px -50px 0px'
+    };
+
+    const observer = new IntersectionObserver(function(entries) {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('animate-fade');
+            }
+        });
+    }, observerOptions);
+
+    // Observe elements for animation
+    document.addEventListener('DOMContentLoaded', function() {
+        const elementsToAnimate = document.querySelectorAll('.work, .services-list > div, .about-col-1, .about-col-2');
+        elementsToAnimate.forEach(el => observer.observe(el));
+    });
 
 </script>
 

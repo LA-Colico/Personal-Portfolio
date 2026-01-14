@@ -1,4 +1,21 @@
-/*-------------Responsive CSS for Mobile and Tablet -----------------------*/
+/*-------------Responsive CSS for Tablet -----------------------*/
+@media only screen and (max-width:1024px){
+    .container{
+        padding: 5px 5%;
+    }
+    .projects-grid{
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 30px;
+    }
+    .sub-title{
+        font-size: 40px;
+    }
+    .header-text h1{
+        font-size: 40px;
+    }
+}
+
+/*-------------Responsive CSS for Mobile -----------------------*/
 @media only screen and (max-width:600px){
     #blog-header{
         background-image: url(images/phone.png);
@@ -14,11 +31,17 @@
         margin-top: 110%;
         font-size: 16px;
     }
+    .header-text{
+        padding: 0 20px;
+    }
     .header-text h1{
-        font-size: 30px;
+        font-size: 28px;
     }
     .header-text h1 span{
         color: #3b537c;
+    }
+    .header-text p{
+        font-size: 14px;
     }
     .btn button{
         width: 50%;
@@ -52,10 +75,15 @@
         cursor: pointer;
     }
     .sub-title{
-        font-size: 40px;
+        font-size: 32px;
+    }
+    .sub-title::after{
+        width: 60px;
+        height: 3px;
     }
     .about-col-1, .about-col-2{
         flex-basis: 100%;
+        padding: 0 20px;
     }
     .about-col-1{
         margin-bottom: 30px;
@@ -69,9 +97,24 @@
     }
     .contact-left, .contact-right{
         flex-basis: 100%;
+        padding: 0 20px;
+    }
+    .contact-left{
+        margin-bottom: 30px;
     }
     .copyright{
-        font-size: 14px;
+        font-size: 12px;
+        padding: 20px 10px;
+    }
+    .services-list{
+        grid-template-columns: 1fr;
+        gap: 30px;
+        padding: 0 20px;
+    }
+    .work-list{
+        grid-template-columns: 1fr;
+        gap: 30px;
+        padding: 0 20px;
     }
     /*------------------Blog HTML-----------------------*/
     .blog-col-1, .blog-col-2{
@@ -96,4 +139,33 @@
 .comment-section .submit-button {
     margin-top: 20px;
 }
+    /*------------------Projects Page-----------------------*/
+    .projects-header-text{
+        margin-top: 100%;
+        font-size: 16px;
+    }
+    .projects-header-text h1{
+        font-size: 40px;
+    }
+    .projects-grid{
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+    .project-card{
+        margin: 0 auto;
+        max-width: 100%;
+    }
+    .project-image{
+        height: 200px;
+    }
+    .cta-section h2{
+        font-size: 32px;
+    }
+    .cta-section p{
+        font-size: 16px;
+    }
+    .section-description{
+        font-size: 16px;
+        padding: 0 20px;
+    }
 }

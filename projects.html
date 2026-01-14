@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> | My Projects</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
+    <script src="https://kit.fontawesome.com/21412dc414.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div id="projects-header">
+    <video autoplay loop muted playsinline class="background-clip">
+        <source src="images/bgvid.mp4" type="video/mp4">
+    </video>
+    <div class="container">
+        <nav>
+            <img src="images/logo.png" class="logo">
+            <ul id="sidemenu">
+                <li><a href="main.html#header">Home</a></li>
+                <li><a href="main.html#about">About me</a></li>
+                <li><a href="main.html#services">Services</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="main.html#contact">Contact</a></li>
+                <i class="fas fa-solid fa-xmark" onclick="closemenu()"></i>
+            </ul>
+            <i class="fas fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="projects-header-text">
+            <p>Portfolio by <span>Lanz Colico</span></p>
+            <h1><span>|</span> My Projects</h1>
+        </div>
+    </div>
+</div>
+
+<!-----------Projects Gallery Section----------->
+<div id="projects">
+    <div class="container">
+        <h1 class="sub-title">Featured Projects</h1>
+        <p class="section-description">A collection of my work showcasing web development, design, and creative projects</p>
+
+        <div class="projects-grid">
+            <!-- Project 1: Cash Elan Bank App -->
+            <div class="project-card" data-category="mobile">
+                <div class="project-image">
+                    <img src="images/cashelan.png" alt="Cash Elan Bank App">
+                    <div class="project-overlay">
+                        <div class="project-links">
+                            <a href="https://github.com/LA-Colico/Cash-Elan-Bank-App" class="project-link" title="View Code"><i class="fa-brands fa-github"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-info">
+                    <div class="project-category">Mobile Banking App</div>
+                    <h3>Cash Elan Bank App</h3>
+                    <p>Production-ready mobile banking application with real OTP delivery, secure transactions, and enterprise-grade security features.</p>
+                    <div class="project-tech">
+                        <span class="tech-tag">React Native</span>
+                        <span class="tech-tag">Firebase</span>
+                        <span class="tech-tag">TypeScript</span>
+                        <span class="tech-tag">Expo</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project 2: Ask Lagronian -->
+            <div class="project-card" data-category="ai">
+                <div class="project-image">
+                    <img src="images/lagro.png" alt="Ask Lagronian Campus Chatmate">
+                    <div class="project-overlay">
+                        <div class="project-links">
+                            <a href="https://ask-lagronian-campus-chatmate.vercel.app" class="project-link" title="View Live"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                            <a href="https://github.com/LA-Colico/Ask-Lagronian-Campus-Chatmate" class="project-link" title="View Code"><i class="fa-brands fa-github"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-info">
+                    <div class="project-category">AI Chatbot</div>
+                    <h3>Ask Lagronian Campus Chatmate</h3>
+                    <p>Intelligent chatbot assistant for Lagro High School powered by Google's Gemini AI, providing information to students and prospective enrollees.</p>
+                    <div class="project-tech">
+                        <span class="tech-tag">Flask</span>
+                        <span class="tech-tag">Gemini AI</span>
+                        <span class="tech-tag">Google OAuth</span>
+                        <span class="tech-tag">Python</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project 3: Hanapkita -->
+            <div class="project-card" data-category="web">
+                <div class="project-image">
+                    <img src="images/hanapkita.png" alt="Hanapkita Job Portal">
+                    <div class="project-overlay">
+                        <div class="project-links">
+                            <a href="https://github.com/LA-Colico/hanapkita" class="project-link" title="View Code"><i class="fa-brands fa-github"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-info">
+                    <div class="project-category">Web Application</div>
+                    <h3>Hanapkita Job Portal</h3>
+                    <p>Comprehensive PHP-based job portal connecting job seekers with employers, featuring separate interfaces for users, employers, and administrators.</p>
+                    <div class="project-tech">
+                        <span class="tech-tag">PHP</span>
+                        <span class="tech-tag">MySQL</span>
+                        <span class="tech-tag">Bootstrap</span>
+                        <span class="tech-tag">jQuery</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project 4: Vira1ine AI -->
+            <div class="project-card" data-category="ai">
+                <div class="project-image">
+                    <img src="images/eekism.png" alt="Vira1ine AI">
+                    <div class="project-overlay">
+                        <div class="project-links">
+                            <a href="https://github.com/LA-Colico/Vira1ine-AI" class="project-link" title="View Code"><i class="fa-brands fa-github"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-info">
+                    <div class="project-category">AI Analytics Platform</div>
+                    <h3>Vira1ine AI</h3>
+                    <p>AI-powered content analytics platform helping creators understand trends and optimal posting times across multiple social media platforms.</p>
+                    <div class="project-tech">
+                        <span class="tech-tag">React</span>
+                        <span class="tech-tag">Node.js</span>
+                        <span class="tech-tag">MongoDB</span>
+                        <span class="tech-tag">OpenAI</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project 5: Portfolio Website -->
+            <div class="project-card" data-category="web">
+                <div class="project-image">
+                    <img src="images/logo.png" alt="Personal Portfolio">
+                    <div class="project-overlay">
+                        <div class="project-links">
+                            <a href="https://github.com/LA-Colico/Personal-Portfolio" class="project-link" title="View Code"><i class="fa-brands fa-github"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-info">
+                    <div class="project-category">Web Development</div>
+                    <h3>Personal Portfolio</h3>
+                    <p>Modern, responsive portfolio website with smooth animations, interactive project gallery, and blog section showcasing my creative journey.</p>
+                    <div class="project-tech">
+                        <span class="tech-tag">HTML5</span>
+                        <span class="tech-tag">CSS3</span>
+                        <span class="tech-tag">JavaScript</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project 6: Photography Portfolio -->
+            <div class="project-card" data-category="design">
+                <div class="project-image">
+                    <img src="images/3.png" alt="Photography Portfolio">
+                    <div class="project-overlay">
+                        <div class="project-links">
+                            <a href="https://www.instagram.com/laclc_/" class="project-link" title="View Live"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-info">
+                    <div class="project-category">Photography</div>
+                    <h3>Dark Academia Collection</h3>
+                    <p>Photography portfolio showcasing dark academia aesthetic with moody tones, vintage vibes, and artistic perspectives captured since 2016.</p>
+                    <div class="project-tech">
+                        <span class="tech-tag">Photography</span>
+                        <span class="tech-tag">Adobe Lightroom</span>
+                        <span class="tech-tag">Instagram</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-----------Call to Action Section----------->
+<div class="cta-section">
+    <div class="container">
+        <h2>Let's Work Together</h2>
+        <p>Interested in collaborating on a project?</p>
+        <a href="main.html#contact" class="btn2 btn3">Get In Touch</a>
+    </div>
+</div>
+
+<!-----------Footer----------->
+<div class="copyright">
+    <p>Copyright © LA Colico. Made with <i class="fa-solid fa-heart"></i> by Lanz Colico </p>
+</div>
+
+<script>
+var sidemenu = document.getElementById("sidemenu");
+
+function openmenu(){
+    sidemenu.style.right = "0";
+}
+function closemenu(){
+    sidemenu.style.right = "-200px";
+}
+
+// Intersection Observer for scroll animations
+const observerOptions = {
+    threshold: 0.1,
+    rootMargin: '0px 0px -50px 0px'
+};
+
+const observer = new IntersectionObserver(function(entries) {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add('fade-in');
+        }
+    });
+}, observerOptions);
+
+document.querySelectorAll('.project-card').forEach(card => {
+    observer.observe(card);
+});
+</script>
+
+</body>
+</html>
